@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}blog titles{% endblock %}
+{% block content %}
+<h1>just a test</h1>
+<div class="row text-center vertical-middle-sm">
+    <h1>我的blog</h1>
+</div>
+<div>
+    <div class="col-xs-12 col-md-8">
+    <ul>
+        {% for blog in blogs %}
+            <li>{{blog.title}}</li>
+        {% endfor %}
+    </ul>
+    </div>
+</div>
+{% endblock %}
